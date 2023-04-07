@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU GAMES STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LU GAMES STORE</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li><h3>Sobre a loja</h3>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Sobre a loja</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> 
+                    <h3>Produtos</h3>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">VideoGames</a>
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <div class="lojaf">
+                    <img class="loja" src="./images/loja.jpg"/>
+                <article class="produto">
+                    <h2>Sobre a loja</h2>
+                    <a>
+                        <h3>
+                            Fundada no ano de 2023, a Lu Games Store é uma empresa que trabalha com os mais variados produtos, atuando principalmente no setor de informática e equipamentos eletrônicos em geral, área bastante competitiva e em constante crescimento, onde qualidade, variedade, garantia e eficiência são critérios importantíssimos para total satisfação, confiança e preferência de nossos consumidores.
+                        </h3>
+                    </a>
+                </article>
+                </div>
+            </section>
+            <section>
+                <h2>Produtos</h2>
+                <div class="products">
+                    <article class="produto">
+                    <a>
+                        <img class="ps" src="./images/ps5.png"/>
+                        <h3>
+                            Playstation 5
+                            <h4>
+                                Console Playstation 5, disponível nas versões Fat e Digital Edition.
+                            </h4>
+                        </h3>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a>
+                        <img src="./images/xbox.jpg"/>
+                        <h3>
+                            Xbox Series X
+                            <h4>
+                                Console Xbox Series X, disponivel versão com 2 controles inclusos.
+                            </h4>
+                        </h3>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a>
+                        <img class="nintendo" src="./images/switch.jpg"/>
+                        <h3>
+                            Nintendo Switch
+                            <h4>
+                                Console Nintendo Switch, disponivel versão com 2 controles inclusos. 
+                            </h4>
+                        </h3>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a>
+                        <img src="./images/pc.png"/>
+                        <h3>
+                            PC Gamer
+                            <h4>
+                                PC Gamer com as melhores configurações do mercado.
+                            </h4>
+                        </h3>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+            </div>
+                
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
